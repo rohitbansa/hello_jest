@@ -23,6 +23,17 @@ jobs:
         run: cd ~ ; ls -a; ls -d $PWD
       - name: SonarCloud Scan
         uses: SonarSource/sonarcloud-github-action@master
+        with:
+          projectBaseDir: hello_jest
+          args: >
+            -Dsonar.organization=rohitbansa
+            -Dsonar.projectKey=rohitbansa_hello_jest
+            -Dsonar.javascript.lcov.reportPaths=tests/coverage/lcov.info
+            -Dsonar.sources=src/
+            -Dsonar.test.exclusions=tests/**
+            -Dsonar.tests=tests/
+            -Dsonar.verbose=true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Needed to get PR information, if any
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+          
