@@ -20,7 +20,7 @@ jobs:
       - name: Test and coverage
         run: npm run coverage
       - name: Show Path
-        run: cd tests ; ls -a;  ls -d $PWD
+        run: cd ~ ; ls -a; ls -d $PWD
       - name: SonarCloud Scan
         uses: SonarSource/sonarcloud-github-action@master
         env:
