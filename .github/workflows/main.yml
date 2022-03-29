@@ -24,7 +24,7 @@ jobs:
       - name: SonarCloud Scan
         uses: SonarSource/sonarcloud-github-action@master
         with:
-          projectBaseDir: hello_jest
+          projectBaseDir: /home/runner/work/hello_jest/hello_jest
           args: >
             -Dsonar.organization=rohitbansa
             -Dsonar.projectKey=rohitbansa_hello_jest
