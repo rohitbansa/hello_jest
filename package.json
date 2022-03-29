@@ -8,23 +8,23 @@
     "dist/index.js"
   ],
   "dependencies": {
-    "jquery": "^3.0.0"
+    "jquery": "3.0.0"
   },
   "devDependencies": {
-    "babel-cli": "^6.26.0",
-    "babel-eslint": "^8.0.3",
-    "babel-plugin-transform-object-rest-spread": "^6.26.0",
-    "babel-preset-env": "^1.6.1",
+    "babel-cli": "6.26.0",
+    "babel-eslint": "8.0.3",
+    "babel-plugin-transform-object-rest-spread": "6.26.0",
+    "babel-preset-env": "1.6.1",
     "browserify": "*",
-    "coveralls": "^3.0.0",
-    "eslint": "^4.13.0",
-    "eslint-plugin-import": "^2.8.0",
-    "jest": "^22.4.3",
-    "jest-dev-server": "^4.4.0",
-    "jest-puppeteer": "^4.4.0",
-    "opener": "^1.4.0",
-    "parcelify": "^0.12.5",
-    "puppeteer": "^3.0.2"
+    "coveralls": "3.0.0",
+    "eslint": "4.13.0",
+    "eslint-plugin-import": "2.8.0",
+    "jest": "22.4.3",
+    "jest-dev-server": "4.4.0",
+    "jest-puppeteer": "4.4.0",
+    "opener": "1.4.0",
+    "parcelify": "0.12.5",
+    "puppeteer": "2.1.1"
   },
   "scripts": {
     "build-css": "touch html/bundle.css && parcelify html/entry.js -c html/bundle.css",
