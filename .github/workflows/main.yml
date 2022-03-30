@@ -25,12 +25,12 @@ jobs:
         uses: SonarSource/sonarcloud-github-action@master
         with:
           projectBaseDir: /home/runner/work/hello_jest/hello_jest
-          args: >
-            -Dsonar.organization=rohitbansa
-            -Dsonar.projectKey=rohitbansa_hello_jest
-            -Dsonar.javascript.lcov.reportPaths=tests/coverage/lcov.info
-            -Dsonar.test.exclusions=tests/**
-            -Dsonar.tests=tests/
+#          args: >
+#            -Dsonar.organization=rohitbansa
+#            -Dsonar.projectKey=rohitbansa_hello_jest
+#            -Dsonar.javascript.lcov.reportPaths=tests/coverage/lcov.info
+#            -Dsonar.test.exclusions=tests/**
+#            -Dsonar.tests=tests/
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Needed to get PR information, if any
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
