@@ -24,7 +24,8 @@ jobs:
 #        with:
 #          name: code-coverage-report
 #          path: coverage/lcov.info
-      - name: Show Path
+#      - name: Show Path
+#        run: cd tests/coverage ; ls -a; ls -d $PWD;
       - name: SonarCloud Scan
         uses: SonarSource/sonarcloud-github-action@master
 #        with:
