@@ -13,12 +13,12 @@ jobs:
       - uses: actions/checkout@v2
         with:
           fetch-depth: 0  # Shallow clones should be disabled for a better relevancy of analysis
-      - name: Install Http Server
-        run: npm install --global http-server
-      - name: Install dependencies
-        run: npm install
-      - name: Test and coverage
-        run: npm run coverage
+#      - name: Install Http Server
+#        run: npm install --global http-server
+#      - name: Install dependencies
+#        run: npm install
+#      - name: Test and coverage
+#        run: npm run coverage
 #      - name: Archive code coverage results
 #        uses: actions/upload-artifact@v2
 #        with:
