@@ -2,6 +2,7 @@
 
 Object.defineProperty(exports, "__esModule", {
   value: true
+
 });
 
 // Require jQuery only if needed.
