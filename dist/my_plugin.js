@@ -12,7 +12,7 @@
             html: "hello world",
             italic: false
         }, options);
-        this.settings = settings;
+        // this.settings = settings;
         if (settings.italic) {
             this.html("<em>" + settings.html + "</em>");
         } else {
