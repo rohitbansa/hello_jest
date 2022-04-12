@@ -20,12 +20,12 @@ jobs:
         run: npm install --global http-server
 #      - name: Install dependencies
 #        run: npm install
-      - name: Test and coverage
-        uses: ArtiomTr/jest-coverage-report-action@v2
 #      - name: Test and coverage
-#        uses: mattallty/jest-github-action@master
-#        env:
-#          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+#        uses: ArtiomTr/jest-coverage-report-action@v2
+      - name: Test and coverage
+        uses: mattallty/jest-github-action@master
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 #        with:
 #          working-directory: "/home/runner/work/hello_jest/hello_jest"
 #      - name: Show Path
