@@ -16,8 +16,8 @@ jobs:
 #      - uses: actions/setup-node@v1
 #        with:
 #          node-version: '14.x'
-#      - name: Install Http Server
-#        run: npm install --global http-server
+      - name: Install Http Server
+        run: npm install --global http-server
 #      - name: Install dependencies
 #        run: npm install
       - name: Test and coverage
