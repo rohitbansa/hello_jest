@@ -20,7 +20,7 @@ jobs:
 #      - name: Test and coverage
 #        uses: ArtiomTr/jest-coverage-report-action@v2
       - name: Test and coverage
-        uses: mattallty/jest-github-action@v1
+        uses: mattallty/jest-github-action@master
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 #      - name: Show Path
