@@ -13,12 +13,16 @@ jobs:
       - uses: actions/checkout@v2
         with:
           fetch-depth: 0  # Shallow clones should be disabled for a better relevancy of analysis
-      - name: Install Http Server
-        run: npm install --global http-server
-      - name: Install dependencies
-        run: npm install
+#      - name: Install Http Server
+#        run: npm install --global http-server
+#      - name: Install dependencies
+#        run: npm install
+#      - name: Test and coverage
+#        uses: ArtiomTr/jest-coverage-report-action@v2
       - name: Test and coverage
-        uses: ArtiomTr/jest-coverage-report-action@v2
+        uses: mattallty/jest-github-action@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 #      - name: Show Path
 #        run: cd ~ ; ls -a; ls -d $PWD
 #      - name: SonarCloud Scan
