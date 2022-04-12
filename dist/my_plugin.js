@@ -5,6 +5,7 @@
 (function ($) {
     $.fn.plugin_functionality = function (options) {
         // plugin implementation here
+        throw {}
         console.log("plugin called " + this);
         var settings = $.extend({
             viewBox: "0 0 500 500",
